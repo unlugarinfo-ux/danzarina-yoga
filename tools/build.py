@@ -23,16 +23,62 @@ SITE = {
     'zone': 'Saint-Joseph et le Sud de La Réunion',
 }
 
-NAV = [
-    ('/danse/', 'Danse'),
-    ('/yoga/', 'Yoga'),
-    ('/cours-personnalises/', 'Cours personnalisés'),
-    ('/ateliers/', 'Ateliers'),
-    ('/hotels-partenaires/', 'Hôtels & partenaires'),
-    ('/a-propos/', 'À propos'),
-]
+NAV = ['danse', 'yoga', 'perso', 'ateliers', 'hotels', 'apropos']
 
 def esc(s): return html.escape(s, quote=True)
+
+# ---------- Multilingue : français (racine), espagnol (/es/), anglais (/en/) ----------
+L = 'fr'
+LANGS = ('fr', 'es', 'en')
+PATHS = {
+    'accueil': {'fr': '/', 'es': '/es/', 'en': '/en/'},
+    'danse': {'fr': '/danse/', 'es': '/es/danza/', 'en': '/en/dance/'},
+    'yoga': {'fr': '/yoga/', 'es': '/es/yoga/', 'en': '/en/yoga/'},
+    'perso': {'fr': '/cours-personnalises/', 'es': '/es/clases-personalizadas/', 'en': '/en/private-lessons/'},
+    'ateliers': {'fr': '/ateliers/', 'es': '/es/talleres/', 'en': '/en/workshops/'},
+    'hotels': {'fr': '/hotels-partenaires/', 'es': '/es/hoteles-colaboradores/', 'en': '/en/hotels-partners/'},
+    'apropos': {'fr': '/a-propos/', 'es': '/es/sobre-nosotros/', 'en': '/en/about/'},
+    'contact': {'fr': '/contact/', 'es': '/es/contacto/', 'en': '/en/contact/'},
+    'merci': {'fr': '/merci/', 'es': '/es/gracias/', 'en': '/en/thank-you/'},
+    'mentions': {'fr': '/mentions-legales/', 'es': '/es/aviso-legal/', 'en': '/en/legal-notice/'},
+    'confidentialite': {'fr': '/politique-de-confidentialite/', 'es': '/es/politica-de-privacidad/', 'en': '/en/privacy-policy/'},
+}
+def u(key, lang=None): return PATHS[key][lang or L]
+def cle(path):
+    for k, v in PATHS.items():
+        if path in v.values(): return k
+    return None
+
+CH = {
+ 'fr': {'menu':'Menu','lang': 'fr', 'locale': 'fr_FR', 'nom': 'Français', 'court': 'FR',
+        'nav': {'danse': 'Danse', 'yoga': 'Yoga', 'perso': 'Cours personnalisés', 'ateliers': 'Ateliers', 'hotels': 'Hôtels & partenaires', 'apropos': 'À propos', 'contact': 'Contact', 'accueil': 'Accueil'},
+        'skip': 'Aller au contenu', 'marque': 'Danzarina, danse et yoga : accueil', 'sous_marque': 'Danse &amp; Yoga', 'nav_label': 'Navigation principale', 'langues': 'Langue du site',
+        'pied_txt': 'Cours de danse et de yoga, ateliers et séances personnalisées.', 'zone_t': 'Zone d’activité', 'zone': 'Saint-Joseph et le Sud de La Réunion',
+        'mentions': 'Mentions légales', 'confid': 'Politique de confidentialité', 'logo_alt': 'Logo Danzarina',
+        'cta_t': 'Une question, une envie ?', 'cta_x': 'Écrivez-nous ou appelez-nous : nous vous répondons avec plaisir.', 'cta_b': 'Nous contacter', 'appeler': 'Appeler le',
+        'yp_t': 'Yoga à la plage · Grand Anse', 'yp_lieu': 'Lieu', 'yp_lieu_v': 'Plage de Grand Anse, Saint-Joseph', 'yp_jour': 'Jour', 'yp_jour_v': 'Le mardi', 'yp_h': 'Horaire', 'yp_h_v': 'De 9h30 à 11h', 'yp_style': 'Style',
+        'yp_note': 'Pour connaître la reprise, les tarifs et le matériel à prévoir, <a href="{c}">contactez-nous</a>.',
+        'email_inv': 'Indiquez une adresse e-mail valide, par exemple nom@exemple.fr.', 'requis': 'Ce champ est obligatoire.'},
+ 'es': {'menu':'Menú','lang': 'es', 'locale': 'es_ES', 'nom': 'Español', 'court': 'ES',
+        'nav': {'danse': 'Danza', 'yoga': 'Yoga', 'perso': 'Clases personalizadas', 'ateliers': 'Talleres', 'hotels': 'Hoteles', 'apropos': 'Quiénes somos', 'contact': 'Contacto', 'accueil': 'Inicio'},
+        'skip': 'Ir al contenido', 'marque': 'Danzarina, danza y yoga: inicio', 'sous_marque': 'Danza y Yoga', 'nav_label': 'Navegación principal', 'langues': 'Idioma de la web',
+        'pied_txt': 'Clases de danza y de yoga, talleres y sesiones personalizadas.', 'zone_t': 'Zona de actividad', 'zone': 'Saint-Joseph y el sur de La Reunión',
+        'mentions': 'Aviso legal', 'confid': 'Política de privacidad', 'logo_alt': 'Logotipo de Danzarina',
+        'cta_t': '¿Una pregunta, unas ganas?', 'cta_x': 'Escríbenos o llámanos: te respondemos con gusto.', 'cta_b': 'Contactarnos', 'appeler': 'Llamar al',
+        'yp_t': 'Yoga en la playa · Grand Anse', 'yp_lieu': 'Lugar', 'yp_lieu_v': 'Playa de Grand Anse, Saint-Joseph', 'yp_jour': 'Día', 'yp_jour_v': 'Los martes', 'yp_h': 'Horario', 'yp_h_v': 'De 9:30 a 11:00', 'yp_style': 'Estilo',
+        'yp_note': 'Para saber la fecha de reanudación, las tarifas y el material necesario, <a href="{c}">contáctanos</a>.',
+        'email_inv': 'Escribe un email válido, por ejemplo nombre@ejemplo.com.', 'requis': 'Este campo es obligatorio.'},
+ 'en': {'menu':'Menu','lang': 'en', 'locale': 'en_GB', 'nom': 'English', 'court': 'EN',
+        'nav': {'danse': 'Dance', 'yoga': 'Yoga', 'perso': 'Private lessons', 'ateliers': 'Workshops', 'hotels': 'Hotels & partners', 'apropos': 'About', 'contact': 'Contact', 'accueil': 'Home'},
+        'skip': 'Skip to content', 'marque': 'Danzarina, dance and yoga: home', 'sous_marque': 'Dance &amp; Yoga', 'nav_label': 'Main navigation', 'langues': 'Site language',
+        'pied_txt': 'Dance and yoga classes, workshops and private sessions.', 'zone_t': 'Where we work', 'zone': 'Saint-Joseph and the south of Réunion Island',
+        'mentions': 'Legal notice', 'confid': 'Privacy policy', 'logo_alt': 'Danzarina logo',
+        'cta_t': 'A question, an idea?', 'cta_x': 'Write to us or give us a call: we will be glad to reply.', 'cta_b': 'Contact us', 'appeler': 'Call',
+        'yp_t': 'Beach yoga · Grand Anse', 'yp_lieu': 'Place', 'yp_lieu_v': 'Grand Anse beach, Saint-Joseph', 'yp_jour': 'Day', 'yp_jour_v': 'Tuesdays', 'yp_h': 'Time', 'yp_h_v': '9.30 to 11 am', 'yp_style': 'Style',
+        'yp_note': 'To find out when classes restart, prices and what to bring, <a href="{c}">get in touch</a>.',
+        'email_inv': 'Enter a valid email address, for example name@example.com.', 'requis': 'This field is required.'},
+}
+def T(k): return CH[L][k]
 
 def picture(name, alt, sizes, cls='', eager=False, mobile=None):
     """<picture> AVIF/WebP/JPEG avec srcset ; mobile = (nom, media) pour un recadrage alternatif."""
@@ -61,42 +107,52 @@ ICONES = {
     'hotel': '<svg class="carte__icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 40h36M10 40V14l14-8 14 8v26M19 40v-9h10v9M17 20h4M27 20h4"/></svg>',
 }
 
+def selecteur(path):
+    k = cle(path)
+    out = []
+    for lg in LANGS:
+        href = u(k, lg) if k else u('accueil', lg)
+        cur = ' aria-current="true"' if lg == L else ''
+        out.append(f'<li><a href="{href}" hreflang="{lg}" lang="{lg}"{cur}><abbr title="{CH[lg]["nom"]}">{CH[lg]["court"]}</abbr></a></li>')
+    return f'<ul class="langues" aria-label="{T("langues")}">{"".join(out)}</ul>'
+
 def entete(actif):
     items = []
-    for href, label in NAV:
-        cur = ' aria-current="page"' if href == actif else ''
-        items.append(f'<li><a href="{href}"{cur}>{label}</a></li>')
-    cur = ' aria-current="page"' if actif == '/contact/' else ''
-    items.append(f'<li><a class="nav-cta" href="/contact/"{cur}>Contact</a></li>')
-    return f'''<a class="skip" href="#contenu">Aller au contenu</a>
+    for k in NAV:
+        href = u(k); cur = ' aria-current="page"' if href == actif else ''
+        items.append(f'<li><a href="{href}"{cur}>{esc(T("nav")[k])}</a></li>')
+    cur = ' aria-current="page"' if actif == u('contact') else ''
+    items.append(f'<li><a class="nav-cta" href="{u("contact")}"{cur}>{T("nav")["contact"]}</a></li>')
+    return f'''<a class="skip" href="#contenu">{T('skip')}</a>
 <header class="entete">
   <div class="wrap">
-    <a class="marque" href="/" aria-label="Danzarina, danse et yoga : accueil">
+    <a class="marque" href="{u('accueil')}" aria-label="{T('marque')}">
       <img src="/assets/brand/logo-cercle-128.webp" width="128" height="128" alt="">
-      <span>Danzarina<small>Danse &amp; Yoga</small></span>
+      <span>Danzarina<small>{T('sous_marque')}</small></span>
     </a>
+    {selecteur(actif)}
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Menu
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>{T("menu")}
     </button>
-    <nav id="nav" class="nav" aria-label="Navigation principale"><ul>{''.join(items)}</ul></nav>
+    <nav id="nav" class="nav" aria-label="{T('nav_label')}"><ul>{''.join(items)}</ul>{selecteur(actif).replace('class="langues"', 'class="langues langues--menu"')}</nav>
   </div>
 </header>'''
 
 def pied():
-    nav = ''.join(f'<li><a href="{h}">{l}</a></li>' for h, l in [('/', 'Accueil')] + NAV + [('/contact/', 'Contact')])
+    nav = ''.join(f'<li><a href="{u(k)}">{esc(T("nav")[k])}</a></li>' for k in ['accueil'] + NAV + ['contact'])
     return f'''<footer class="pied">
   <div class="wrap">
     <div class="pied__grille">
       <div>
-        <img class="pied__logo" src="/assets/brand/logo-cercle-256.webp" width="256" height="256" alt="Logo Danzarina" loading="lazy">
-        <p>Cours de danse et de yoga, ateliers et séances personnalisées.</p>
+        <img class="pied__logo" src="/assets/brand/logo-cercle-256.webp" width="256" height="256" alt="{T('logo_alt')}" loading="lazy">
+        <p>{T('pied_txt')}</p>
       </div>
       <div>
-        <h2>Zone d’activité</h2>
-        <p>{SITE['zone']}</p>
+        <h2>{T('zone_t')}</h2>
+        <p>{T('zone')}</p>
       </div>
       <div>
-        <h2>Contact</h2>
+        <h2>{T('nav')['contact']}</h2>
         <ul>
           <li><a href="tel:{SITE['tel_lien']}">{SITE['tel_affiche']}</a></li>
           <li><a href="mailto:{SITE['email']}">{SITE['email']}</a></li>
@@ -111,7 +167,7 @@ def pied():
     </div>
     <div class="pied__bas">
       <span>© {date.today().year} {SITE['nom_long']}</span>
-      <span><a href="/mentions-legales/">Mentions légales</a> · <a href="/politique-de-confidentialite/">Politique de confidentialité</a></span>
+      <span><a href="{u('mentions')}">{T('mentions')}</a> · <a href="{u('confidentialite')}">{T('confid')}</a></span>
     </div>
   </div>
 </footer>'''
@@ -126,12 +182,19 @@ ORG = {
     'founder': {'@type': 'Person', 'name': 'Julieta'},
 }
 
+def alternates(path):
+    k = cle(path)
+    if not k or k in ('merci',): return ''
+    out = [f'<link rel="alternate" hreflang="{lg}" href="{SITE["url"]}{u(k, lg)}">' for lg in LANGS]
+    out.append(f'<link rel="alternate" hreflang="x-default" href="{SITE["url"]}{u(k, "fr")}">')
+    return '\n'.join(out)
+
 def page(path, title, description, h1_block, body, schema=None, ogimg='/assets/brand/og-danzarina.jpg', robots='index, follow'):
     canon = SITE['url'] + path
     sch = [ORG] + (schema or [])
     ld = '\n'.join(f'<script type="application/ld+json">{json.dumps(s, ensure_ascii=False)}</script>' for s in sch)
     doc = f'''<!doctype html>
-<html lang="fr">
+<html lang="{L}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -140,7 +203,8 @@ def page(path, title, description, h1_block, body, schema=None, ogimg='/assets/b
 <meta name="robots" content="{robots}">
 <link rel="canonical" href="{canon}">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="fr_FR">
+<meta property="og:locale" content="{T('locale')}">
+{alternates(path)}
 <meta property="og:site_name" content="Danzarina">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
@@ -179,22 +243,23 @@ def titre(eyebrow, h1, lead):
 
 def contact_cta_s(*a, **k): return contact_cta(*a, sur_sable=True, **k)
 
-def contact_cta(titre_txt='Une question, une envie ?', texte='Écrivez-nous ou appelez-nous : nous vous répondons avec plaisir.', bouton='Nous contacter', sur_sable=False):
+def contact_cta(titre_txt=None, texte=None, bouton=None, sur_sable=False):
     return f'''{vague(' vague--nuit vague--sur-sable' if sur_sable else ' vague--nuit')}
 <section class="section section--nuit" aria-labelledby="cta-titre"><div class="wrap">
-<h2 id="cta-titre">{titre_txt}</h2><p class="lead">{texte}</p>
-<div class="actions"><a class="btn btn--plein" href="/contact/">{bouton}</a><a class="btn btn--contour" href="tel:{SITE['tel_lien']}">Appeler le {SITE['tel_affiche']}</a></div>
+<h2 id="cta-titre">{titre_txt or T('cta_t')}</h2><p class="lead">{texte or T('cta_x')}</p>
+<div class="actions"><a class="btn btn--plein" href="{u('contact')}">{bouton or T('cta_b')}</a><a class="btn btn--contour" href="tel:{SITE['tel_lien']}">{T('appeler')} {SITE['tel_affiche']}</a></div>
 </div></section>'''
 
-YOGA_PLAGE = f'''<div class="encart">
-<h3>Yoga à la plage · Grand Anse</h3>
+def yoga_plage():
+    return f'''<div class="encart">
+<h3>{T('yp_t')}</h3>
 <dl>
-<dt>Lieu</dt><dd>Plage de Grand Anse, Saint-Joseph</dd>
-<dt>Jour</dt><dd>Le mardi</dd>
-<dt>Horaire</dt><dd>De 9h30 à 11h</dd>
-<dt>Style</dt><dd>Shantyoga</dd>
+<dt>{T('yp_lieu')}</dt><dd>{T('yp_lieu_v')}</dd>
+<dt>{T('yp_jour')}</dt><dd>{T('yp_jour_v')}</dd>
+<dt>{T('yp_h')}</dt><dd>{T('yp_h_v')}</dd>
+<dt>{T('yp_style')}</dt><dd>Shantyoga</dd>
 </dl>
-<p class="mention" style="margin:1rem 0 0">Pour connaître la reprise, les tarifs et le matériel à prévoir, <a href="/contact/">contactez-nous</a>.</p>
+<p class="mention" style="margin:1rem 0 0">{T('yp_note').format(c=u('contact'))}</p>
 </div>'''
 
 pages = []
@@ -232,7 +297,7 @@ f'''<section class="hero-t" aria-labelledby="h1-accueil">
 <p class="lead">Le Shantyoga s’ajuste à chaque élève et met beaucoup l’accent sur les alignements : écoute du corps, respiration, alignement, présence et bien-être.</p>
 <a class="lien-fleche" href="/yoga/">Tout savoir sur le yoga</a>
 </div>
-{YOGA_PLAGE}
+{yoga_plage()}
 </div></section>
 
 <figure class="bandeau bandeau--x">
@@ -316,7 +381,7 @@ pages.append(page('/yoga/',
 <li>Écoute du corps</li><li>Respiration</li><li>Alignement</li><li>Présence</li><li>Bien-être</li>
 </ul>
 </div>
-{YOGA_PLAGE}
+{yoga_plage()}
 </div></section>
 <figure class="bandeau bandeau--doux">{picture('ambiance-yoga-tapis', '', '100vw')}</figure>
 {vague()}
@@ -464,8 +529,9 @@ pages.append(page('/contact/',
 </div>
 <div>
 <h2>Écrire un message</h2>
-<form class="form" name="contact" method="POST" action="/merci/" data-netlify="true" netlify-honeypot="site-web" data-valider>
+<form class="form" name="contact" method="POST" action="/merci/" data-netlify="true" netlify-honeypot="site-web" data-valider data-email="{T('email_inv')}" data-requis="{T('requis')}">
 <input type="hidden" name="form-name" value="contact">
+<input type="hidden" name="langue" value="fr">
 <p class="cache"><label>Ne pas remplir : <input name="site-web" tabindex="-1" autocomplete="off"></label></p>
 <p class="mention" style="margin:0">Les champs marqués d’un astérisque (*) sont obligatoires.</p>
 <div class="champ"><label for="nom">Nom et prénom *</label><input id="nom" name="nom" type="text" autocomplete="name" required aria-describedby="nom-erreur" data-vide="Indiquez votre nom."><span class="erreur" id="nom-erreur" aria-live="polite"></span></div>
@@ -526,10 +592,19 @@ pages.append(page('/404.html', 'Page introuvable | Danzarina', 'Cette page n’e
  titre('Erreur 404', 'Page introuvable', 'Cette page n’existe pas ou a été déplacée.'),
  '<section class="section" style="padding-top:0"><div class="wrap"><div class="actions"><a class="btn btn--plein" href="/">Retour à l’accueil</a><a class="btn btn--contour" href="/contact/">Nous contacter</a></div></div></section>', robots='noindex, follow'))
 
-# ---------- sitemap ----------
-idx = [p for p in pages if p not in ('/merci/', '/mentions-legales/', '/politique-de-confidentialite/', '/404.html')]
-sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-sm += [f'  <url><loc>{SITE["url"]}{p}</loc><lastmod>{TODAY}</lastmod></url>' for p in idx]
+# ---------- Espagnol et anglais ----------
+for _lg in ('es', 'en'):
+    L = _lg
+    exec(open(os.path.join(ROOT, 'tools', f'pages_{_lg}.py'), encoding='utf-8').read())
+L = 'fr'
+
+# ---------- sitemap (avec versions linguistiques) ----------
+cles = ['accueil', 'danse', 'yoga', 'perso', 'ateliers', 'hotels', 'apropos', 'contact']
+sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+for k in cles:
+    alts = ''.join(f'<xhtml:link rel="alternate" hreflang="{lg}" href="{SITE["url"]}{u(k, lg)}"/>' for lg in LANGS) + f'<xhtml:link rel="alternate" hreflang="x-default" href="{SITE["url"]}{u(k, "fr")}"/>'
+    for lg in LANGS:
+        sm.append(f'  <url><loc>{SITE["url"]}{u(k, lg)}</loc><lastmod>{TODAY}</lastmod>{alts}</url>')
 sm.append('</urlset>')
 open(os.path.join(ROOT, 'sitemap.xml'), 'w').write('\n'.join(sm) + '\n')
-print('pages:', pages)
+print('pages:', len(pages))

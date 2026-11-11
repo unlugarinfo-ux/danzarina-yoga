@@ -24,8 +24,8 @@
     form.querySelectorAll('[required]').forEach(function (champ) {
       var msg = document.getElementById(champ.id + '-erreur');
       var texte = '';
-      if (!champ.value.trim()) texte = champ.dataset.vide || 'Ce champ est obligatoire.';
-      else if (champ.type === 'email' && !champ.validity.valid) texte = 'Indiquez une adresse e-mail valide, par exemple nom@exemple.fr.';
+      if (!champ.value.trim()) texte = champ.dataset.vide || form.dataset.requis || 'Ce champ est obligatoire.';
+      else if (champ.type === 'email' && !champ.validity.valid) texte = form.dataset.email || 'Indiquez une adresse e-mail valide, par exemple nom@exemple.fr.';
       champ.setAttribute('aria-invalid', texte ? 'true' : 'false');
       if (msg) msg.textContent = texte;
       if (texte && !premier) premier = champ;
