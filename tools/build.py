@@ -310,7 +310,7 @@ f'''<section class="hero-t" aria-labelledby="h1-accueil">
 <div>
 <p class="eyebrow">Un parcours en mouvement</p>
 <h2 id="parcours-titre">Une vie à danser, à transmettre</h2>
-<p>Danzarina est née du parcours de Julieta, artiste du mouvement d’origine argentine, formée auprès de sa professeure Myrtha Cardarelli. Elle enseigne la danse aux enfants, le tango et la salsa aux adultes, et le yoga.</p>
+<p>Danzarina est née du parcours de Julieta, artiste du mouvement d’origine argentine : plus de 20 ans de formation en ballet, jazz, danse contemporaine, tango, salsa, zouk et kizomba. Aujourd’hui, elle allie la danse et le yoga dans sa propre méthode d’enseignement.</p>
 <p>Aujourd’hui, Danzarina poursuit son chemin à La Réunion.</p>
 <a class="lien-fleche" href="/a-propos/">Découvrir notre histoire</a>
 </div>
@@ -478,14 +478,17 @@ pages.append(page('/a-propos/',
 <p class="eyebrow">La fondatrice</p>
 <h2 id="julieta-titre">Julieta</h2>
 <h3>Son histoire</h3>
-<p>Artiste du mouvement d’origine argentine, Julieta danse depuis toujours. Elle a été formée auprès de sa professeure Myrtha Cardarelli.</p>
+<p>Artiste du mouvement d’origine argentine, Julieta se forme à la danse depuis plus de 20 ans. Danseuse de ballet, jazz, danse contemporaine, tango, salsa, zouk et kizomba, elle s’est spécialisée dans chacun de ces styles.</p>
+<p>Elle a mené un long parcours dans la danse et à travers le monde, en transmettant son savoir dans différentes villes et écoles de danse en Russie, en Espagne et en France.</p>
 <h3>Sa formation</h3>
 <ul class="liste-points">
+<li>Plus de 20 ans de formation en danse : ballet, jazz, danse contemporaine, tango, salsa, zouk et kizomba</li>
+<li>Formation en Argentine avec sa professeure Myrtha Cardarelli</li>
 <li>Certification Shantyoga 200 heures (2019), formation reconnue par Yoga Alliance</li>
 <li>Formation en cours au yoga Iyengar</li>
 </ul>
-<h3>Ce qu’elle transmet</h3>
-<p>Elle enseigne la danse aux enfants, le tango et la salsa aux adultes, et le yoga.</p>
+<h3>Son chemin dans le yoga</h3>
+<p>Aujourd’hui, elle poursuit son chemin dans le yoga et crée son propre système d’enseignement, dans lequel elle met en pratique tout ce qu’elle a appris au cours d’une vie consacrée au mouvement. Elle enseigne la danse aux enfants, le tango et la salsa aux adultes, ainsi que le yoga.</p>
 </div>
 </div></section>
 {vague()}

@@ -52,7 +52,7 @@ f'''<section class="hero-t" aria-labelledby="h1-accueil">
 <div>
 <p class="eyebrow">A journey in movement</p>
 <h2 id="parcours-titre">A life of dancing and teaching</h2>
-<p>Danzarina grew out of the journey of Julieta, a movement artist from Argentina who trained with her teacher Myrtha Cardarelli. She teaches dance to children, tango and salsa to adults, and yoga.</p>
+<p>Danzarina grew out of the journey of Julieta, a movement artist from Argentina with over 20 years’ training in ballet, jazz, contemporary dance, tango, salsa, zouk and kizomba. Today she combines dance and yoga in her own teaching method.</p>
 <p>Today, Danzarina continues its path in Réunion Island.</p>
 <a class="lien-fleche" href="{u('apropos')}">Discover our story</a>
 </div>
@@ -216,14 +216,17 @@ pages.append(page(u('apropos'),
 <p class="eyebrow">The founder</p>
 <h2 id="julieta-titre">Julieta</h2>
 <h3>Her story</h3>
-<p>A movement artist from Argentina, Julieta has always danced. She trained with her teacher Myrtha Cardarelli.</p>
+<p>A movement artist from Argentina, Julieta has been training in dance for over 20 years. A dancer of ballet, jazz, contemporary dance, tango, salsa, zouk and kizomba, she has specialised in each of these styles.</p>
+<p>She has had a long journey in dance and around the world, sharing her expertise in various cities and dance schools across Russia, Spain and France.</p>
 <h3>Her training</h3>
 <ul class="liste-points">
+<li>Over 20 years’ training in dance: ballet, jazz, contemporary dance, tango, salsa, zouk and kizomba</li>
+<li>Training in Argentina with her teacher, Myrtha Cardarelli</li>
 <li>200-hour Shantyoga certification (2019), training recognised by Yoga Alliance</li>
 <li>Currently training in Iyengar yoga</li>
 </ul>
-<h3>What she teaches</h3>
-<p>She teaches dance to children, tango and salsa to adults, and yoga.</p>
+<h3>Her path in yoga</h3>
+<p>Today she continues her path in yoga, creating her own teaching system in which she applies everything she has learnt over a life devoted to movement. She teaches dance to children, tango and salsa to adults, and yoga.</p>
 </div>
 </div></section>
 {vague()}
