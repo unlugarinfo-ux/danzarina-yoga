@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /merci/
+
+# Moteurs de recherche IA : OAI-SearchBot (ChatGPT Search) autorisé par défaut.
+# GPTBot (entraînement des modèles) : décision à prendre par la propriétaire.
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://www.danzarina.fr/sitemap.xml

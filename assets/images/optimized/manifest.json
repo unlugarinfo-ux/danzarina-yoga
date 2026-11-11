@@ -1,0 +1,229 @@
+{
+ "hero-danse-a-deux-16x9": {
+  "widths": [
+   768,
+   1076
+  ],
+  "ratio": [
+   1076,
+   605
+  ]
+ },
+ "hero-danse-a-deux-4x5": {
+  "widths": [
+   480,
+   578
+  ],
+  "ratio": [
+   578,
+   722
+  ]
+ },
+ "parcours-noir-et-blanc": {
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "ratio": [
+   1388,
+   1041
+  ]
+ },
+ "danse-canape-paysage": {
+  "widths": [
+   480,
+   800,
+   1017
+  ],
+  "ratio": [
+   1017,
+   572
+  ]
+ },
+ "mouvement-sous-le-ciel-2x1": {
+  "widths": [
+   768,
+   1280,
+   1600
+  ],
+  "ratio": [
+   1600,
+   800
+  ]
+ },
+ "mouvement-sous-le-ciel-4x5": {
+  "widths": [
+   480,
+   800
+  ],
+  "ratio": [
+   960,
+   1200
+  ]
+ },
+ "danse-fleurs-violettes": {
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "ratio": [
+   1592,
+   1062
+  ]
+ },
+ "portrait-editorial-julieta": {
+  "widths": [
+   480,
+   800,
+   896
+  ],
+  "ratio": [
+   896,
+   1120
+  ]
+ },
+ "julieta-portrait-interieur": {
+  "widths": [
+   480,
+   732
+  ],
+  "ratio": [
+   732,
+   915
+  ]
+ },
+ "julieta-pose-danse-artistique": {
+  "widths": [
+   480,
+   800,
+   896
+  ],
+  "ratio": [
+   896,
+   1120
+  ]
+ },
+ "accueil-julieta-voile-terracotta": {
+  "widths": [
+   720,
+   1076
+  ],
+  "ratio": [
+   1076,
+   722
+  ]
+ },
+ "accueil-julieta-voile-terracotta-4x5": {
+  "widths": [
+   480,
+   578
+  ],
+  "ratio": [
+   578,
+   722
+  ]
+ },
+ "danse-terrasse-mer": {
+  "widths": [
+   768,
+   1280,
+   1531
+  ],
+  "ratio": [
+   1531,
+   1027
+  ]
+ },
+ "danse-terrasse-mer-4x5": {
+  "widths": [
+   480,
+   800
+  ],
+  "ratio": [
+   822,
+   1027
+  ]
+ },
+ "ambiance-bougie-lotus": {
+  "widths": [
+   720,
+   1076
+  ],
+  "ratio": [
+   1076,
+   722
+  ]
+ },
+ "ambiance-jardin-zen": {
+  "widths": [
+   720,
+   1076
+  ],
+  "ratio": [
+   1076,
+   722
+  ]
+ },
+ "ambiance-eau-calme": {
+  "widths": [
+   720,
+   1076
+  ],
+  "ratio": [
+   1076,
+   722
+  ]
+ },
+ "ambiance-frangipanier": {
+  "widths": [
+   720,
+   1076
+  ],
+  "ratio": [
+   1076,
+   722
+  ]
+ },
+ "ambiance-sable-ondes": {
+  "widths": [
+   720,
+   1076
+  ],
+  "ratio": [
+   1076,
+   722
+  ]
+ },
+ "ambiance-yoga-tapis": {
+  "widths": [
+   720,
+   1076
+  ],
+  "ratio": [
+   1076,
+   722
+  ]
+ },
+ "danse-canape-ciel-2x1": {
+  "widths": [
+   768,
+   1024
+  ],
+  "ratio": [
+   1024,
+   512
+  ]
+ },
+ "danse-canape-ciel-4x5": {
+  "widths": [
+   480,
+   614
+  ],
+  "ratio": [
+   614,
+   768
+  ]
+ }
+}

@@ -1,0 +1,45 @@
+[build]
+  publish = "."
+
+# Anciennes URLs de danzarina.fr (LWS) -> nouvelles pages
+[[redirects]]
+  from = "/Qui-sommes-nous/*"
+  to = "/a-propos/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/Galerie/*"
+  to = "/danse/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/Horaires-Yoga/*"
+  to = "/yoga/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/Horaires-Danse/*"
+  to = "/danse/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/Horaires/*"
+  to = "/contact/"
+  status = 301
+  force = true
+# /Yoga/, /Danse/ et /Contact/ ne diffèrent que par la casse : à vérifier après le premier déploiement.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

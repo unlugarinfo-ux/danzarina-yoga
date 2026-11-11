@@ -1,0 +1,347 @@
+/* Danzarina · design system */
+@font-face{font-family:"Fraunces";src:url("/assets/fonts/fraunces-latin-wght-normal.woff2") format("woff2");font-weight:300 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces";src:url("/assets/fonts/fraunces-latin-wght-italic.woff2") format("woff2");font-weight:300 900;font-style:italic;font-display:swap}
+@font-face{font-family:"Nunito Sans";src:url("/assets/fonts/nunito-sans-latin-wght-normal.woff2") format("woff2");font-weight:300 900;font-style:normal;font-display:swap}
+
+:root{
+  /* Palette alignée sur le logo : corail, rose, violet, turquoise */
+  --ecume:#FDF9F5;      /* fond blanc */
+  --sable:#F6EEE6;      /* lin clair (voile) : sections */
+  --sable-2:#E8DCCB;     /* bordures */
+  --orange:#1F7A72;     /* orange brûlé, texte et boutons (5:1 sur blanc) */
+  --orange-texte:#A64B67;
+  --basalte:#3A2A2A;    /* texte, montagnes du logo */
+  --basalte-2:#6E5E5C;  /* texte secondaire */
+  --lagon:#7ED2C5;      /* décoratif uniquement */
+  --lagon-fonce:#8C4A62;/* bleu mer : liens, boutons (6,2:1 sur blanc) */
+  --lagon-nuit:#3A2629;  /* mer profonde */
+  --soleil:#7ED2C5;     /* décoratif */
+  --rose:#EB5674;       /* logo dégradé, décoratif */
+  --violet:#9D52E3;     /* logo dégradé, décoratif */
+  --degrade:linear-gradient(90deg,#F2A08F 0%,#E58FA8 45%,#B997CF 100%);
+  --hibiscus:#EA5677;   /* décoratif */
+  --hibiscus-fonce:#A64B67;
+  --focus:#2B1A30;
+
+  --f-titre:"Fraunces",Georgia,"Times New Roman",serif;
+  --f-texte:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+
+  --s-1:.25rem;--s-2:.5rem;--s-3:.75rem;--s-4:1rem;--s-5:1.5rem;--s-6:2rem;--s-7:3rem;--s-8:4.5rem;--s-9:6rem;
+  --radius:14px;--radius-lg:28px;
+  --largeur:72rem;--lecture:40rem;
+  --ombre:0 1px 2px rgba(30,42,42,.06),0 8px 24px rgba(30,42,42,.07);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:5rem}
+body{position:relative;isolation:isolate;margin:0;background:var(--ecume);color:var(--basalte);font-family:var(--f-texte);font-size:1.0625rem;line-height:1.65;text-rendering:optimizeLegibility}
+img,picture,svg{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:var(--f-titre);font-weight:500;line-height:1.15;letter-spacing:-.01em;margin:0 0 var(--s-4);font-optical-sizing:auto;text-wrap:balance}
+h1{font-size:clamp(2.1rem,1.4rem + 3.2vw,3.6rem)}
+h2{font-size:clamp(1.6rem,1.2rem + 1.8vw,2.4rem)}
+h3{font-size:1.3rem;font-weight:600}
+p{margin:0 0 var(--s-4);max-width:var(--lecture);text-wrap:pretty}
+a{color:var(--lagon-fonce);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{color:var(--lagon-nuit);text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:var(--s-4);top:-4rem;background:var(--basalte);color:var(--ecume);padding:var(--s-3) var(--s-4);border-radius:8px;z-index:100}
+.skip:focus{top:var(--s-4);color:var(--ecume)}
+
+.wrap{width:100%;max-width:var(--largeur);margin-inline:auto;padding-inline:var(--s-4)}
+@media (min-width:48rem){.wrap{padding-inline:var(--s-6)}}
+.section{padding-block:var(--s-8)}
+.section--sable{background:var(--sable)}
+.section--nuit{background:var(--lagon-nuit);color:var(--ecume)}
+.section--nuit a{color:var(--ecume)}
+.eyebrow{font-family:var(--f-texte);font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-texte);margin-bottom:var(--s-3)}
+.section--nuit .eyebrow{color:#F4B8C8}
+.lead{font-size:1.2rem;color:var(--basalte-2)}
+.section--nuit .lead{color:#EBDDF0}
+
+/* Boutons et liens */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;min-width:44px;padding:.75rem 1.4rem;border-radius:999px;font-weight:800;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .2s}
+.btn--plein{background:var(--lagon-fonce);color:#fff}
+.btn--plein:hover{background:#6E3A4D;color:#fff}
+.btn--contour{border-color:currentColor;color:var(--lagon-fonce);background:transparent}
+.btn--contour:hover{background:var(--lagon-fonce);color:#fff;border-color:var(--lagon-fonce)}
+.section--nuit .btn--plein{background:var(--ecume);color:var(--lagon-nuit)}
+.section--nuit .btn--contour{color:var(--ecume)}
+.actions{display:flex;flex-wrap:wrap;gap:var(--s-3);margin-top:var(--s-5)}
+.lien-fleche{font-weight:800;text-decoration:none}
+.lien-fleche::after{content:" →"}
+.lien-fleche:hover{text-decoration:underline}
+
+/* En-tête */
+.entete::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--degrade)}
+.entete{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--ecume) 94%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--sable-2)}
+.entete .wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--s-4);min-height:4.5rem}
+.marque{display:flex;align-items:center;gap:var(--s-3);text-decoration:none;color:var(--basalte)}
+.marque img{width:52px;height:52px}@media (min-width:68rem){.marque img{width:60px;height:60px}}
+.marque span{font-family:var(--f-titre);font-size:1.35rem;line-height:1}
+.marque small{display:block;font-family:var(--f-texte);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--basalte-2);margin-top:.2rem}
+.menu-btn{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;min-width:44px;padding:.5rem .9rem;border:2px solid var(--basalte);border-radius:999px;background:transparent;color:var(--basalte);font:inherit;font-weight:800;cursor:pointer}
+.menu-btn svg{width:20px;height:20px}
+.nav{display:none}
+.nav.is-open{display:block;position:absolute;left:0;right:0;top:100%;background:var(--ecume);border-bottom:1px solid var(--sable-2);box-shadow:var(--ombre)}
+.nav ul{list-style:none;margin:0;padding:var(--s-3) var(--s-4) var(--s-5)}
+.nav a{display:flex;align-items:center;min-height:48px;padding:.25rem .5rem;font-weight:700;color:var(--basalte);text-decoration:none;border-radius:8px}
+.nav a:hover{background:var(--sable)}
+.nav a[aria-current="page"]{color:var(--lagon-fonce);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.35em}
+.nav .nav-cta{margin-top:var(--s-2);justify-content:center;background:var(--lagon-fonce);color:#fff;border-radius:999px}
+.nav .nav-cta:hover{background:#6E3A4D;color:#fff}
+@media (min-width:68rem){
+  .menu-btn{display:none}
+  .nav,.nav.is-open{display:block;position:static;box-shadow:none;border:0;background:transparent}
+  .nav ul{display:flex;align-items:center;gap:.15rem;padding:0}
+  .nav a{min-height:44px;padding:.25rem .6rem;font-size:.95rem}
+  .nav .nav-cta{margin:0 0 0 .5rem;padding-inline:1rem}
+}
+
+/* Hero */
+.hero{position:relative;overflow:hidden}
+.hero__grille{display:grid;gap:var(--s-6);align-items:center;padding-block:var(--s-6) var(--s-8)}
+.hero__media{position:relative}
+.hero__media img{width:100%;border-radius:var(--radius-lg);object-fit:cover}
+.hero__media::after{content:"";position:absolute;inset:auto -6% -8% auto;width:42%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 40%,var(--soleil),#9F53DB 75%);opacity:.9;z-index:-1}
+.hero__texte .lead{margin-bottom:0}
+@media (min-width:56rem){.hero__grille{grid-template-columns:1fr 1.15fr;padding-block:var(--s-8) var(--s-9)}}
+
+/* Vague / basalte */
+.vague{display:block;width:100%;height:48px;color:var(--sable)}
+.vague--nuit{color:var(--lagon-nuit)}
+.vague--haut{transform:rotate(180deg)}
+.vague--sur-sable{background:var(--sable)}
+
+/* Grilles et cartes */
+.grille{display:grid;gap:var(--s-5)}
+@media (min-width:44rem){.grille--2{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:60rem){.grille--3{grid-template-columns:repeat(3,1fr)}}
+.carte{background:#fff;border:1px solid var(--sable-2);border-top:4px solid var(--soleil);border-radius:var(--radius);padding:var(--s-5);box-shadow:var(--ombre);display:flex;flex-direction:column}
+.carte h3{margin-bottom:var(--s-2)}
+.carte p{color:var(--basalte-2)}
+.carte .lien-fleche{margin-top:auto}
+.carte__icone{width:44px;height:44px;margin-bottom:var(--s-4);color:var(--orange)}
+.carte--lien{position:relative}
+.carte--lien a.lien-fleche::before{content:"";position:absolute;inset:0;border-radius:var(--radius)}
+.carte--lien:hover{border-color:var(--lagon)}
+.carte--lien:focus-within{outline:3px solid var(--focus);outline-offset:3px}
+.carte--lien a:focus-visible{outline:none}
+
+.duo{display:grid;gap:var(--s-6);align-items:center}
+@media (min-width:56rem){.duo{grid-template-columns:1fr 1fr}.duo--inverse>:first-child{order:2}}
+.duo figure{margin:0}
+.duo img{border-radius:var(--radius-lg);width:100%}
+figcaption{font-size:.85rem;color:var(--basalte-2);margin-top:var(--s-2)}
+
+.liste-points{list-style:none;padding:0;margin:0 0 var(--s-5);display:grid;gap:var(--s-2)}
+.liste-points li{position:relative;padding-left:1.6rem}
+.liste-points li::before{content:"";position:absolute;left:0;top:.6em;width:.6rem;height:.6rem;border-radius:50%;background:var(--soleil)}
+
+.etapes{counter-reset:e;list-style:none;padding:0;margin:0;display:grid;gap:var(--s-4)}
+@media (min-width:60rem){.etapes{grid-template-columns:repeat(5,1fr)}}
+.etapes li{counter-increment:e;background:#fff;border-radius:var(--radius);padding:var(--s-5) var(--s-4);border:1px solid var(--sable-2)}
+.etapes li::before{content:counter(e);display:grid;place-items:center;width:2.25rem;height:2.25rem;border-radius:50%;background:var(--orange);color:#fff;font-weight:800;margin-bottom:var(--s-3)}
+.etapes h3{font-size:1.1rem}
+.etapes p{font-size:.95rem;color:var(--basalte-2);margin:0}
+
+/* Encadré horaire */
+.encart{background:#fff;border-left:6px solid var(--soleil);border-radius:var(--radius);padding:var(--s-5);box-shadow:var(--ombre)}
+.encart dl{display:grid;grid-template-columns:auto 1fr;gap:var(--s-2) var(--s-4);margin:0}
+.encart dt{font-weight:800}
+.encart dd{margin:0}
+
+/* Bandeau image pleine largeur */
+.bandeau{margin:0}
+.bandeau img{width:100%;max-height:78vh;object-fit:cover}
+.bandeau__phrase{font-family:var(--f-titre);font-style:italic;font-size:clamp(1.6rem,1.2rem + 2vw,2.6rem);text-align:center;padding:var(--s-6) var(--s-4);margin:0 auto;max-width:none;color:var(--lagon-nuit)}
+
+/* Galerie courte */
+.galerie{display:grid;gap:var(--s-4);grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));list-style:none;padding:0;margin:0}
+.galerie img{border-radius:var(--radius);width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* FAQ */
+.faq details{border-bottom:1px solid var(--sable-2);padding-block:var(--s-2)}
+.faq summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:800;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"+";display:inline-grid;place-items:center;width:1.6rem;height:1.6rem;margin-right:.75rem;border-radius:50%;border:2px solid var(--lagon-fonce);color:var(--lagon-fonce);flex:none}
+.faq details[open] summary::before{content:"−"}
+.faq details p{margin:var(--s-2) 0 var(--s-3) 2.35rem}
+
+/* Formulaire */
+.form{display:grid;gap:var(--s-4);max-width:36rem}
+.champ label{display:block;font-weight:800;margin-bottom:var(--s-1)}
+.champ .aide{display:block;font-size:.9rem;color:var(--basalte-2);margin-bottom:var(--s-2)}
+.champ input,.champ select,.champ textarea{width:100%;min-height:48px;padding:.7rem .9rem;border:2px solid #8C7A93;border-radius:10px;background:#fff;color:var(--basalte);font:inherit}
+.champ textarea{min-height:9rem;resize:vertical}
+.champ input:focus-visible,.champ select:focus-visible,.champ textarea:focus-visible{outline:3px solid var(--focus);outline-offset:1px;border-color:var(--basalte)}
+.champ [aria-invalid="true"]{border-color:var(--focus)}
+.erreur{display:block;color:var(--focus);font-weight:700;margin-top:var(--s-1)}
+.erreur:empty{display:none}
+.mention{font-size:.9rem;color:var(--basalte-2)}
+.cache{display:none}
+
+.coord{list-style:none;padding:0;margin:0;display:grid;gap:var(--s-3)}
+.coord a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+
+/* Pied de page */
+.pied{border-top:4px solid transparent;border-image:var(--degrade) 1;background:#3A2629;color:#F6ECE6;padding-block:var(--s-8) var(--s-6);margin-top:0}
+.pied a{color:#fff}
+.pied__grille{display:grid;gap:var(--s-6)}
+@media (min-width:56rem){.pied__grille{grid-template-columns:1.3fr 1fr 1fr 1fr}}
+.pied h2{font-family:var(--f-texte);font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#F4B8C8;margin-bottom:var(--s-3)}
+.pied ul{list-style:none;margin:0;padding:0}
+.pied li a{display:inline-flex;align-items:center;min-height:44px}
+.pied__logo{width:140px;height:140px;margin-bottom:var(--s-4)}
+.pied__bas{border-top:1px solid #4A2A55;margin-top:var(--s-6);padding-top:var(--s-4);font-size:.9rem;display:flex;flex-wrap:wrap;gap:var(--s-2) var(--s-5);justify-content:space-between}
+
+.page-titre{padding-block:var(--s-7) var(--s-5)}
+.page-titre .lead{margin-bottom:0}
+.contenu-legal h2{font-size:1.4rem;margin-top:var(--s-6)}
+.a-completer{background:#FFF1C9;border-radius:4px;padding:0 .25em;font-weight:700}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+/* Filigrane : ornement turquoise du logo « Danzarina », sur toutes les pages */
+body::before{content:"";position:fixed;z-index:-1;pointer-events:none;top:50%;right:.5rem;transform:translateY(-45%);height:min(78vh,44rem);aspect-ratio:222/794;background:url("/assets/brand/ornement-filigrane.webp") no-repeat center/contain;opacity:.35}
+@media (min-width:68rem){body::before{right:3vw}}
+@media print{body::before{display:none}}
+
+/* ===== Accueil v2 : composition éditoriale ===== */
+.btn--clair{background:#FFFFFF;color:#3B1A47}
+.btn--clair:hover{background:#F4B8C8;color:#3B1A47}
+.btn--ligne{border-color:#FFFFFF;color:#FFFFFF;background:transparent}
+.btn--ligne:hover{background:#FFFFFF;color:#3B1A47}
+
+.hero-x{position:relative;overflow:hidden;color:#FBF3FA;background:radial-gradient(120% 90% at 78% 40%,#5B2668 0%,#3B1A47 45%,#24102B 100%)}
+.hero-x .eyebrow{color:#F4B8C8}
+.hero-x__grille{position:relative;display:grid;gap:var(--s-6);align-items:center;padding-block:var(--s-6) var(--s-8)}
+.hero-x h1{margin:0 0 var(--s-5);color:#FBF5EC}
+.hero-x__l1{display:block;font-size:clamp(3rem,1.6rem + 7vw,6.6rem);line-height:.95;font-weight:400;letter-spacing:-.02em}
+.hero-x__l2{display:block;margin-top:.6rem;font-style:italic;font-weight:300;font-size:clamp(1.35rem,1rem + 1.6vw,2.1rem);color:#F4B8C8}
+.hero-x .lead{color:#EADCEF;max-width:32rem}
+.hero-x__media{position:relative;margin:0;justify-self:center;width:min(100%,26rem);z-index:1}
+.hero-x__media::before{content:"";position:absolute;inset:-14px -14px 22px 14px;border:1.5px solid #7ED2C5;border-radius:999px 999px 18px 18px;z-index:-1}
+.hero-x__media img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:999px 999px 18px 18px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.hero-x__media figcaption{margin-top:var(--s-3);font-size:.8rem;color:#D9C3DE;text-align:right}
+.hero-x__filigrane{position:absolute;left:50%;bottom:-.18em;transform:translateX(-50%);margin:0;max-width:none;white-space:nowrap;font-family:var(--f-titre);font-style:italic;font-weight:300;font-size:clamp(5rem,18vw,17rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(244,184,200,.22);pointer-events:none;z-index:0}
+@media (min-width:56rem){
+  .hero-x__grille{grid-template-columns:1.15fr .85fr;min-height:min(88vh,52rem);padding-block:var(--s-8) var(--s-9)}
+  .hero-x__media{width:100%;max-width:30rem;justify-self:end}
+}
+
+.manifeste{padding-block:var(--s-8);text-align:center}
+.manifeste__mots{max-width:none;margin:0 auto var(--s-4);font-family:var(--f-titre);font-style:italic;font-weight:300;font-size:clamp(1.9rem,1.2rem + 3.4vw,4rem);line-height:1.15;color:var(--lagon-fonce)}
+.manifeste__mots span{display:inline-block;margin-inline:.25em;background:linear-gradient(90deg,#D97089,#9C6AA8);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em}
+.manifeste__mots span+span::before{-webkit-text-fill-color:#5FBFB1}
+.manifeste__mots span+span::before{content:"·";margin-right:.5em;color:var(--soleil)}
+.manifeste__texte{margin-inline:auto;color:var(--basalte-2);font-size:1.15rem}
+
+.entete-section{max-width:40rem;margin-bottom:var(--s-6)}
+.offres{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.offre{position:relative;padding:var(--s-6) 0;border-top:1px solid #E1CDE4;display:flex;flex-direction:column}
+.offre__num{font-family:var(--f-titre);font-style:italic;font-weight:300;font-size:3.6rem;line-height:1;background:var(--degrade);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:var(--s-3);align-self:flex-start;padding-right:.1em}
+.offre h3{font-size:1.7rem;font-weight:500}
+.offre p{color:var(--basalte-2)}
+.offre .lien-fleche{margin-top:auto}
+@media (min-width:56rem){.offres{grid-template-columns:repeat(3,1fr)}.offre{padding:var(--s-6) var(--s-6) var(--s-5);border-top:0;border-left:1px solid #E1CDE4}.offre:first-child{border-left:0;padding-left:0}}
+
+.section--olive{background:var(--lagon-nuit);color:#F6ECF7}
+.section--olive .eyebrow{color:#F4B8C8}
+.section--olive .lead{color:#E6D6EB}
+.section--olive a{color:#FFFFFF}
+.section--olive .encart{color:var(--basalte)}
+.section--olive .encart a{color:var(--lagon-fonce)}
+
+.bandeau--x{position:relative}
+@media (min-width:56rem){
+  .bandeau--x .bandeau__phrase{position:absolute;right:6vw;bottom:8%;max-width:24rem;text-align:right;padding:0;color:#FBF5EC;text-shadow:0 2px 18px rgba(0,0,0,.45);font-size:clamp(2rem,1.2rem + 2.2vw,3.4rem);line-height:1.1}
+}
+
+.cadre-decale{position:relative;z-index:0}
+.cadre-decale::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:var(--degrade);opacity:.35;border-radius:var(--radius-lg);z-index:-1}
+
+.tuiles{display:grid;gap:var(--s-5)}
+@media (min-width:48rem){.tuiles{grid-template-columns:1fr 1fr}}
+.tuile{border-radius:var(--radius-lg);padding:var(--s-7) var(--s-6);color:#FFFFFF;display:flex;flex-direction:column;align-items:flex-start;min-height:20rem}
+.tuile p{color:#FFF4F8}
+.tuile .eyebrow{color:#FFFFFF}
+.tuile .btn{margin-top:auto}
+.tuile__titre{font-size:clamp(1.8rem,1.3rem + 1.6vw,2.6rem);color:#fff}
+.tuile--terre{background:linear-gradient(150deg,#D9405F,#A8285A)}
+.tuile--olive{background:linear-gradient(150deg,#8A44C6,#6E3A4D)}
+@media (max-width:55.99rem){.hero-x__media::before{inset:-10px -8px 22px 8px}}
+@media (max-width:55.99rem){.cadre-decale::before{inset:12px -6px -12px 12px}}
+
+/* ===== Voiles à contre-jour (fonds tissu dessinés par calcul : tools/telas.py) ===== */
+:root{--nuit-voile:#0C0907}
+.vague--nuit{color:var(--nuit-voile)}
+.hero-x,.section--nuit,.section--olive{background-color:var(--nuit-voile);background-repeat:no-repeat;background-size:cover}
+.hero-x{background-position:70% 40%;background-image:linear-gradient(90deg,rgba(12,9,7,.9) 0%,rgba(12,9,7,.55) 38%,rgba(12,9,7,0) 70%),url("/assets/images/textures/voile-nuit-1920.jpg");background-image:linear-gradient(90deg,rgba(12,9,7,.9) 0%,rgba(12,9,7,.55) 38%,rgba(12,9,7,0) 70%),image-set(url("/assets/images/textures/voile-nuit-1920.avif") type("image/avif"),url("/assets/images/textures/voile-nuit-1920.webp") type("image/webp"),url("/assets/images/textures/voile-nuit-1920.jpg") type("image/jpeg"))}
+.section--olive,.section--nuit{background-position:center;background-image:linear-gradient(180deg,var(--nuit-voile) 0%,rgba(12,9,7,.55) 22%,rgba(12,9,7,.55) 78%,var(--nuit-voile) 100%),url("/assets/images/textures/voile-nuit-2-1920.jpg");background-image:linear-gradient(180deg,var(--nuit-voile) 0%,rgba(12,9,7,.55) 22%,rgba(12,9,7,.55) 78%,var(--nuit-voile) 100%),image-set(url("/assets/images/textures/voile-nuit-2-1920.avif") type("image/avif"),url("/assets/images/textures/voile-nuit-2-1920.webp") type("image/webp"),url("/assets/images/textures/voile-nuit-2-1920.jpg") type("image/jpeg"))}
+.section--nuit .btn--plein{color:#3B1A47}
+.section--sable,.manifeste{background-color:var(--sable);background-repeat:no-repeat;background-size:cover;background-position:center;background-image:linear-gradient(180deg,var(--sable) 0%,rgba(248,240,230,0) 18%,rgba(248,240,230,0) 82%,var(--sable) 100%),url("/assets/images/textures/voile-jour-1920.jpg");background-image:linear-gradient(180deg,var(--sable) 0%,rgba(248,240,230,0) 18%,rgba(248,240,230,0) 82%,var(--sable) 100%),image-set(url("/assets/images/textures/voile-jour-1920.avif") type("image/avif"),url("/assets/images/textures/voile-jour-1920.webp") type("image/webp"),url("/assets/images/textures/voile-jour-1920.jpg") type("image/jpeg"))}
+.manifeste{background-image:url("/assets/images/textures/voile-jour-1920.jpg");background-image:image-set(url("/assets/images/textures/voile-jour-1920.avif") type("image/avif"),url("/assets/images/textures/voile-jour-1920.webp") type("image/webp"),url("/assets/images/textures/voile-jour-1920.jpg") type("image/jpeg"))}
+@media (max-width:55.99rem){
+  .hero-x{background-position:80% 30%;background-image:linear-gradient(180deg,rgba(12,9,7,.35),rgba(12,9,7,.8)),url("/assets/images/textures/voile-nuit-1200.jpg");background-image:linear-gradient(180deg,rgba(12,9,7,.35),rgba(12,9,7,.8)),image-set(url("/assets/images/textures/voile-nuit-1200.avif") type("image/avif"),url("/assets/images/textures/voile-nuit-1200.webp") type("image/webp"),url("/assets/images/textures/voile-nuit-1200.jpg") type("image/jpeg"))}
+}
+
+/* ===== Accueil : image artistique « voile terracotta » (choisie par la propriétaire) ===== */
+.hero-t{position:relative;overflow:hidden;color:#FBF3EC;background:linear-gradient(180deg,#5A1A0A,#2A0E05)}
+.hero-t__media{position:relative;margin:0}
+.hero-t__media img{display:block;width:100%;height:auto}
+.hero-t__media figcaption{position:absolute;left:var(--s-4);bottom:var(--s-3);margin:0;font-size:.75rem;color:#5C4A42;z-index:2}
+.hero-t__grille{position:relative;z-index:2;padding-block:var(--s-7) var(--s-8)}
+.hero-t .eyebrow{color:#F3D3B8}
+.hero-t h1{margin:0 0 var(--s-5);color:#FFF8F1}
+.hero-t__l1{display:block;font-size:clamp(3rem,1.6rem + 6vw,6.2rem);line-height:.95;font-weight:400;letter-spacing:-.02em}
+.hero-t__l2{display:block;margin-top:.6rem;font-style:italic;font-weight:300;font-size:clamp(1.35rem,1rem + 1.5vw,2rem);color:#F3D3B8}
+.hero-t .lead{color:#F6E7DA;max-width:30rem}
+@media (min-width:56rem){
+  .hero-t{min-height:min(90vh,52rem);display:flex;align-items:center}
+  .hero-t__media{position:absolute;inset:0}
+  .hero-t__media picture,.hero-t__media img{height:100%}
+  .hero-t__media img{object-fit:cover;object-position:0% 45%}
+  .hero-t::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(40,10,4,0) 42%,rgba(40,10,4,.35) 62%,rgba(40,10,4,.55) 100%)}
+  .hero-t__grille{width:100%;display:flex;justify-content:flex-end}
+  .hero-t__texte{width:min(100%,31rem);text-shadow:0 2px 24px rgba(30,6,2,.45)}
+}
+
+/* ===== Ambiances douces (11-11) : tons chauds, fuchsias adoucis, images de bien-être ===== */
+.offre__num{background:linear-gradient(90deg,#E58A86,#C77DA6);-webkit-background-clip:text;background-clip:text}
+.manifeste{background-image:linear-gradient(rgba(253,249,245,.78),rgba(253,249,245,.78)),url("/assets/images/optimized/ambiance-sable-ondes-1076.jpg");background-image:linear-gradient(rgba(253,249,245,.78),rgba(253,249,245,.78)),image-set(url("/assets/images/optimized/ambiance-sable-ondes-1076.avif") type("image/avif"),url("/assets/images/optimized/ambiance-sable-ondes-1076.webp") type("image/webp"));background-size:cover;background-position:center}
+.section--olive{background-image:linear-gradient(90deg,rgba(246,244,240,.94) 0%,rgba(246,244,240,.78) 50%,rgba(246,244,240,.3) 100%),url("/assets/images/optimized/ambiance-eau-calme-1076.jpg");background-image:linear-gradient(90deg,rgba(246,244,240,.94) 0%,rgba(246,244,240,.78) 50%,rgba(246,244,240,.3) 100%),image-set(url("/assets/images/optimized/ambiance-eau-calme-1076.avif") type("image/avif"),url("/assets/images/optimized/ambiance-eau-calme-1076.webp") type("image/webp"));background-size:cover;background-position:center;background-color:#EEF1EC;color:var(--basalte)}
+.section--olive .eyebrow{color:var(--orange-texte)}
+.section--olive .lead{color:var(--basalte-2)}
+.section--olive a{color:var(--lagon-fonce)}
+.section--olive h2{color:var(--basalte)}
+.vague--nuit{color:#1F120E}
+.section--nuit{background-image:linear-gradient(90deg,rgba(31,18,14,.88) 0%,rgba(31,18,14,.6) 55%,rgba(31,18,14,.12) 100%),url("/assets/images/optimized/ambiance-bougie-lotus-1076.jpg");background-image:linear-gradient(90deg,rgba(31,18,14,.88) 0%,rgba(31,18,14,.6) 55%,rgba(31,18,14,.12) 100%),image-set(url("/assets/images/optimized/ambiance-bougie-lotus-1076.avif") type("image/avif"),url("/assets/images/optimized/ambiance-bougie-lotus-1076.webp") type("image/webp"));background-size:cover;background-position:70% 60%;background-color:#1F120E}
+.section--nuit .eyebrow{color:#F3D3B8}
+.section--nuit .btn--plein{color:#3A2629}
+.tuile{position:relative;overflow:hidden;color:var(--basalte);padding-top:calc(13rem + var(--s-6));box-shadow:0 18px 40px rgba(90,60,50,.12)}
+.tuile--terre,.tuile--olive{background:#FFFDFB}
+.tuile::before{content:"";position:absolute;left:0;right:0;top:0;height:13rem;background-size:cover;background-position:center}
+.tuile__titre{color:var(--basalte)}
+.tuile p{color:var(--basalte-2)}
+.tuile .eyebrow{color:var(--orange-texte)}
+.tuile .btn--clair{background:var(--lagon-fonce);color:#fff;border-color:transparent}
+.tuile .btn--clair:hover{background:#6E3A4D}
+.bandeau__note{display:block;margin-top:.5rem;font-family:var(--f-texte);font-style:normal;font-size:.75rem;letter-spacing:.04em;opacity:.9}
+.bandeau--doux img{max-height:46vh;object-fit:cover}
+.cadre-decale::before{opacity:.28}
+.tuile--terre::before{background-image:url("/assets/images/optimized/ambiance-frangipanier-720.jpg");background-image:image-set(url("/assets/images/optimized/ambiance-frangipanier-720.avif") type("image/avif"),url("/assets/images/optimized/ambiance-frangipanier-720.webp") type("image/webp"));}
+.tuile--olive::before{background-image:url("/assets/images/optimized/ambiance-jardin-zen-720.jpg");background-image:image-set(url("/assets/images/optimized/ambiance-jardin-zen-720.avif") type("image/avif"),url("/assets/images/optimized/ambiance-jardin-zen-720.webp") type("image/webp"));}
+.cadre-decale::before{background:#A85536;opacity:1}
+.cadre-decale figcaption{position:relative;color:#FFFFFF;padding-left:2.2rem}
+/* Cohérence (11-11) : fonds clairs unis, sans image ni texture ; le manifeste et l'offre forment un seul bloc */
+.section--sable{background-image:none;background-color:var(--sable)}
+.manifeste{background-image:none;background-color:var(--sable);padding-bottom:var(--s-4)}
+.manifeste + .section--sable{padding-top:var(--s-6)}
+/* Contact + pied : l'image de la bougie sert de fond continu, sans vague ni filet (11-11) */
+.vague--nuit{display:none}
+.section--nuit{padding-block:var(--s-9) var(--s-9);background-color:#1F120E;background-position:65% 55%;background-image:linear-gradient(180deg,rgba(31,18,14,0) 45%,#1F120E 88%,#1F120E 100%),linear-gradient(90deg,rgba(31,18,14,.85) 0%,rgba(31,18,14,.55) 50%,rgba(31,18,14,.05) 100%),url("/assets/images/optimized/ambiance-bougie-lotus-1076.jpg");background-image:linear-gradient(180deg,rgba(31,18,14,0) 45%,#1F120E 88%,#1F120E 100%),linear-gradient(90deg,rgba(31,18,14,.85) 0%,rgba(31,18,14,.55) 50%,rgba(31,18,14,.05) 100%),image-set(url("/assets/images/optimized/ambiance-bougie-lotus-1076.avif") type("image/avif"),url("/assets/images/optimized/ambiance-bougie-lotus-1076.webp") type("image/webp"))}
+.section--nuit + .pied,.pied{background:#1F120E;border-top:0;border-image:none;margin-top:-2px;position:relative}
+.pied h2{color:#F3D3B8}
+.nav .nav-cta[aria-current="page"]{color:#fff;text-decoration:none}
