@@ -294,7 +294,7 @@ body::before{content:"";position:fixed;z-index:-1;pointer-events:none;top:50%;ri
 .hero-t__media figcaption{position:absolute;left:var(--s-4);bottom:var(--s-3);margin:0;font-size:.75rem;color:#5C4A42;z-index:2}
 .hero-t__grille{position:relative;z-index:2;padding-block:var(--s-7) var(--s-8)}
 .hero-t .eyebrow{color:#F3D3B8}
-.hero-t h1{margin:0 0 var(--s-5);color:#FFF8F1}
+.hero-t h1{margin:0 0 var(--s-6);color:#FFF8F1}
 .hero-t__l1{display:block;font-size:clamp(3rem,1.6rem + 6vw,6.2rem);line-height:.95;font-weight:400;letter-spacing:-.02em}
 .hero-t__l2{display:block;margin-top:.6rem;font-style:italic;font-weight:300;font-size:clamp(1.35rem,1rem + 1.5vw,2rem);color:#F3D3B8}
 .hero-t .lead{color:#F6E7DA;max-width:30rem}

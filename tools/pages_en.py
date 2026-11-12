@@ -13,8 +13,7 @@ pages.append(page(u('accueil'),
 f'''<section class="hero-t" aria-labelledby="h1-accueil">
 <figure class="hero-t__media">{picture('accueil-julieta-voile-terracotta', 'Julieta balancing on one leg, arm raised, holding a terracotta and olive veil; a large terracotta silk cloth unfolds beside her.', '100vw', eager=True, mobile=('accueil-julieta-voile-terracotta-4x5', '(max-width: 47.99rem)'))}<figcaption>Artistic image</figcaption></figure>
 <div class="wrap hero-t__grille"><div class="hero-t__texte">
-<p class="eyebrow">Saint-Joseph · South of Réunion Island</p>
-<h1 id="h1-accueil"><span class="hero-t__l1">Dance &amp; Yoga</span> <span class="hero-t__l2">in Saint-Joseph, Réunion Island</span></h1>
+<h1 id="h1-accueil"><span class="hero-t__l1">Dance &amp; Yoga</span></h1>
 <p class="lead">Dance and yoga classes, workshops and private sessions. A harmonious rhythm between dance and yoga, to inhabit your body with grace and fluidity.</p>
 <div class="actions"><a class="btn btn--clair" href="{u('yoga')}">Discover yoga</a><a class="btn btn--ligne" href="{u('danse')}">Discover dance</a></div>
 </div></div></section>''',

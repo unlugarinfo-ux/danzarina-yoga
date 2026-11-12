@@ -13,8 +13,7 @@ pages.append(page(u('accueil'),
 f'''<section class="hero-t" aria-labelledby="h1-accueil">
 <figure class="hero-t__media">{picture('accueil-julieta-voile-terracotta', 'Julieta en equilibrio sobre una pierna, con el brazo en alto, sosteniendo un velo terracota y oliva; a su lado se despliega una gran tela de seda terracota.', '100vw', eager=True, mobile=('accueil-julieta-voile-terracotta-4x5', '(max-width: 47.99rem)'))}<figcaption>Imagen artística</figcaption></figure>
 <div class="wrap hero-t__grille"><div class="hero-t__texte">
-<p class="eyebrow">Saint-Joseph · Sur de La Reunión</p>
-<h1 id="h1-accueil"><span class="hero-t__l1">Danza y Yoga</span> <span class="hero-t__l2">en Saint-Joseph, La Reunión</span></h1>
+<h1 id="h1-accueil"><span class="hero-t__l1">Danza y Yoga</span></h1>
 <p class="lead">Clases de danza y de yoga, talleres y sesiones personalizadas. Un ritmo armonioso entre danza y yoga, para habitar el cuerpo con elegancia y fluidez.</p>
 <div class="actions"><a class="btn btn--clair" href="{u('yoga')}">Descubrir el yoga</a><a class="btn btn--ligne" href="{u('danse')}">Descubrir la danza</a></div>
 </div></div></section>''',
