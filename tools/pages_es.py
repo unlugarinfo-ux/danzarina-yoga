@@ -217,11 +217,11 @@ pages.append(page(u('apropos'),
 <h2 id="julieta-titre">Julieta</h2>
 <h3>Su historia</h3>
 <p>Artista del movimiento de origen argentino, Julieta lleva más de 20 años formándose en danza. Es bailarina de ballet, jazz, danza contemporánea, tango, folklore argentino, salsa, zouk y kizomba, y se ha especializado en cada uno de estos estilos.</p>
-<p>Ha tenido un gran recorrido por la danza y por el mundo, compartiendo sus conocimientos en diferentes ciudades y escuelas de danza de Eslovaquia, España y Francia.</p>
+<p>Ha tenido un gran recorrido por la danza y por el mundo, compartiendo sus conocimientos en diferentes ciudades y escuelas de danza de Rusia, España y Francia.</p>
 <h3>Su formación</h3>
 <ul class="liste-points">
 <li>Más de 20 años de formación en danza: ballet, jazz, danza contemporánea, tango, folklore argentino, salsa, zouk y kizomba, entre otras</li>
-<li>Formación con artistas y maestros de renombre en Eslovaquia, Argentina (Córdoba, Buenos Aires), España y Francia</li>
+<li>Formación con artistas y maestros de renombre en Rusia, Argentina (Córdoba, Buenos Aires), España y Francia</li>
 <li>Certificación Shantyoga de 200 horas (2019), formación reconocida por Yoga Alliance</li>
 <li>Actualmente, formación en cursos de yoga Iyengar</li>
 </ul>
