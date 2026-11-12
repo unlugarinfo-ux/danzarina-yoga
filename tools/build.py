@@ -211,7 +211,7 @@ def page(path, title, description, h1_block, body, schema=None, ogimg='/assets/b
 <meta property="og:url" content="{canon}">
 <meta property="og:image" content="{SITE['url']}{ogimg}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#FDF9F5">
+<meta name="theme-color" content="#F7F3EC">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
