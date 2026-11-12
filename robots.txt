@@ -7,4 +7,4 @@ Disallow: /merci/
 User-agent: OAI-SearchBot
 Allow: /
 
-Sitemap: https://www.danzarina.fr/sitemap.xml
+Sitemap: https://danzarina.fr/sitemap.xml

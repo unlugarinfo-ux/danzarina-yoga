@@ -3,11 +3,11 @@
 > Danzarina (Association Danzarina · Danse & Yoga) propose des cours de danse et de yoga, des ateliers, des séances personnalisées et des interventions pour hôtels à Saint-Joseph et dans le Sud de La Réunion. Fondatrice : Julieta.
 
 ## Pages
-- [Accueil](https://www.danzarina.fr/): présentation générale
-- [Danse](https://www.danzarina.fr/danse/): tango et salsa pour adultes, danse pour enfants
-- [Yoga](https://www.danzarina.fr/yoga/): Shantyoga ; yoga à la plage de Grand Anse (Saint-Joseph) le mardi de 9h30 à 11h
-- [Cours personnalisés](https://www.danzarina.fr/cours-personnalises/)
-- [Ateliers](https://www.danzarina.fr/ateliers/)
-- [Hôtels & partenaires](https://www.danzarina.fr/hotels-partenaires/)
-- [À propos](https://www.danzarina.fr/a-propos/)
-- [Contact](https://www.danzarina.fr/contact/): 06 93 77 78 75, assodanzarina@gmail.com
+- [Accueil](https://danzarina.fr/): présentation générale
+- [Danse](https://danzarina.fr/danse/): tango et salsa pour adultes, danse pour enfants
+- [Yoga](https://danzarina.fr/yoga/): Shantyoga ; yoga à la plage de Grand Anse (Saint-Joseph) le mardi de 9h30 à 11h
+- [Cours personnalisés](https://danzarina.fr/cours-personnalises/)
+- [Ateliers](https://danzarina.fr/ateliers/)
+- [Hôtels & partenaires](https://danzarina.fr/hotels-partenaires/)
+- [À propos](https://danzarina.fr/a-propos/)
+- [Contact](https://danzarina.fr/contact/): 06 93 77 78 75, assodanzarina@gmail.com

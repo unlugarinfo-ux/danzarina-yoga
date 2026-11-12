@@ -11,7 +11,7 @@ MANIFEST = json.load(open(os.path.join(ROOT, 'assets/images/optimized/manifest.j
 TODAY = date.today().isoformat()
 
 SITE = {
-    'url': 'https://www.danzarina.fr',
+    'url': 'https://danzarina.fr',
     'nom': 'Danzarina',
     'nom_long': 'Association Danzarina · Danse & Yoga',
     'tel_affiche': '06 93 77 78 75',
