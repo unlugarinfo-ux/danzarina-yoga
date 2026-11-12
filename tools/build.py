@@ -272,7 +272,7 @@ f'''<section class="hero-t" aria-labelledby="h1-accueil">
 <figure class="hero-t__media">{picture('accueil-julieta-voile-terracotta', 'Julieta en équilibre sur une jambe, bras levé, tenant un voile terracotta et olive ; une grande étoffe de soie terracotta se déploie à ses côtés.', '100vw', eager=True, mobile=('accueil-julieta-voile-terracotta-4x5', '(max-width: 47.99rem)'))}<figcaption>Image artistique</figcaption></figure>
 <div class="wrap hero-t__grille"><div class="hero-t__texte">
 <h1 id="h1-accueil"><span class="hero-t__l1">Danse &amp; Yoga</span> <span class="hero-t__l2">La Réunion</span></h1>
-<p class="lead">Cours de danse et de yoga, ateliers et séances personnalisées. Un rythme harmonieux entre danse et yoga, pour habiter son corps avec élégance et fluidité.</p>
+<p class="lead">Cours de danse et de yoga, ateliers et séances personnalisées. Un rythme harmonieux entre danse et yoga, pour vivre son corps avec élégance et fluidité.</p>
 <div class="actions"><a class="btn btn--clair" href="/yoga/">Découvrir le yoga</a><a class="btn btn--ligne" href="/danse/">Découvrir la danse</a></div>
 </div></div></section>''',
  f'''<section class="manifeste" aria-label="Notre intention"><div class="wrap">
