@@ -209,7 +209,7 @@ pages.append(page(u('hotels'),
 pages.append(page(u('apropos'),
  'About Danzarina: Julieta, dance and yoga in Réunion Island | Danzarina',
  'The story of Danzarina and Julieta, a movement artist from Argentina: dance, Shantyoga and a new chapter in Réunion Island.',
- titre('About', 'About Danzarina', 'A harmonious rhythm between dance and yoga, to enrich life with grace and fluidity.'),
+ titre('About', 'About Danzarina', 'Danzarina was born of the wish to create a space devoted to exploring movement and spirituality through dance and yoga.'),
  f'''<section class="section" style="padding-top:0" aria-labelledby="julieta-titre"><div class="wrap duo">
 <figure>{picture('portrait-editorial-julieta', 'Artistic portrait of Julieta walking barefoot along a path, in a long skirt and layered veils, at sunset.', '(min-width: 56rem) 50vw, 100vw')}<figcaption>Artistic portrait.</figcaption></figure>
 <div>

@@ -209,7 +209,7 @@ pages.append(page(u('hotels'),
 pages.append(page(u('apropos'),
  'Sobre Danzarina: Julieta, danza y yoga en La Reunión | Danzarina',
  'La historia de Danzarina y de Julieta, artista del movimiento de origen argentino: danza, Shantyoga y una nueva etapa en La Reunión.',
- titre('Sobre nosotros', 'Sobre Danzarina', 'Un ritmo armonioso entre danza y yoga, para enriquecer la vida con elegancia y fluidez.'),
+ titre('Sobre nosotros', 'Sobre Danzarina', 'Danzarina nació de la voluntad de crear un espacio dedicado a la exploración del movimiento y la espiritualidad a través de la danza y el yoga.'),
  f'''<section class="section" style="padding-top:0" aria-labelledby="julieta-titre"><div class="wrap duo">
 <figure>{picture('portrait-editorial-julieta', 'Retrato artístico de Julieta caminando descalza por un sendero, con falda larga y velos superpuestos, al atardecer.', '(min-width: 56rem) 50vw, 100vw')}<figcaption>Retrato artístico.</figcaption></figure>
 <div>

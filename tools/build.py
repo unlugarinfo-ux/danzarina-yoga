@@ -471,7 +471,7 @@ pages.append(page('/hotels-partenaires/',
 pages.append(page('/a-propos/',
  'À propos de Danzarina : Julieta, danse et yoga à La Réunion | Danzarina',
  'L’histoire de Danzarina et de Julieta, artiste du mouvement d’origine argentine : danse, Shantyoga et une nouvelle étape à La Réunion.',
- titre('À propos', 'À propos de Danzarina', 'Un rythme harmonieux entre danse et yoga, pour enrichir la vie avec élégance et fluidité.'),
+ titre('À propos', 'À propos de Danzarina', 'Danzarina est née de la volonté de créer un espace dédié à l’exploration du mouvement et de la spiritualité à travers la danse et le yoga.'),
  f'''<section class="section" style="padding-top:0" aria-labelledby="julieta-titre"><div class="wrap duo">
 <figure>{picture('portrait-editorial-julieta', 'Portrait artistique de Julieta marchant pieds nus sur un sentier, en jupe longue et voiles superposés, au coucher du soleil.', '(min-width: 56rem) 50vw, 100vw')}<figcaption>Portrait artistique.</figcaption></figure>
 <div>
