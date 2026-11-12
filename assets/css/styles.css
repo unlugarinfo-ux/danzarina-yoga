@@ -372,3 +372,11 @@ body::before{content:"";position:fixed;z-index:-1;pointer-events:none;top:50%;ri
 .offre__agenda{margin:0 0 var(--s-4);padding:var(--s-3) var(--s-4);background:rgba(255,255,255,.55);border-left:3px solid #7E8C4E;border-radius:0 .6rem .6rem 0;font-size:.95rem}
 .offre__agenda-t{margin:0}
 .offre__agenda ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,auto);gap:.35rem .9rem;justify-content:start;font-variant-numeric:tabular-nums;color:#4A5230;font-weight:600}
+.offres--lineas{gap:var(--s-5)}
+.offres--lineas .offre--carte{padding:0;border:0;background:#FFFCF9;border-radius:var(--radius-lg,1.25rem);overflow:hidden;box-shadow:0 18px 40px rgba(90,60,50,.12)}
+.offre__img{margin:0;aspect-ratio:4/3;overflow:hidden;flex:none}
+.offre__img picture{display:block;height:100%}
+.offre__img img{width:100%;height:100%;object-fit:cover;display:block}
+.offre__corps{padding:var(--s-5) var(--s-5) var(--s-6);display:flex;flex-direction:column;flex:1}
+.offre__corps .lien-fleche{margin-top:auto}
+@media (min-width:56rem){.offres--lineas .offre--carte,.offres--lineas .offre--carte:first-child{padding:0;border-left:0}}
