@@ -52,7 +52,7 @@ f'''<section class="hero-t" aria-labelledby="h1-accueil">
 <div>
 <p class="eyebrow">Un recorrido en movimiento</p>
 <h2 id="parcours-titre">Una vida bailando, transmitiendo</h2>
-<p>Danzarina nace del recorrido de Julieta, artista del movimiento de origen argentino: más de 20 años de formación en ballet, jazz, danza contemporánea, tango, salsa, zouk y kizomba. Hoy une la danza y el yoga en su propio sistema de enseñanza.</p>
+<p>Danzarina nace del recorrido de Julieta, artista del movimiento de origen argentino: más de 20 años de formación en ballet, jazz, danza contemporánea, tango, folklore argentino, salsa, zouk y kizomba. Hoy une la danza y el yoga en su propio sistema de enseñanza.</p>
 <p>Hoy, Danzarina continúa su camino en La Reunión.</p>
 <a class="lien-fleche" href="{u('apropos')}">Descubrir nuestra historia</a>
 </div>
@@ -216,14 +216,14 @@ pages.append(page(u('apropos'),
 <p class="eyebrow">La fundadora</p>
 <h2 id="julieta-titre">Julieta</h2>
 <h3>Su historia</h3>
-<p>Artista del movimiento de origen argentino, Julieta lleva más de 20 años formándose en danza. Es bailarina de ballet, jazz, danza contemporánea, tango, salsa, zouk y kizomba, y se ha especializado en cada uno de estos estilos.</p>
-<p>Ha tenido un gran recorrido por la danza y por el mundo, compartiendo sus conocimientos en diferentes ciudades y escuelas de danza de Rusia, España y Francia.</p>
+<p>Artista del movimiento de origen argentino, Julieta lleva más de 20 años formándose en danza. Es bailarina de ballet, jazz, danza contemporánea, tango, folklore argentino, salsa, zouk y kizomba, y se ha especializado en cada uno de estos estilos.</p>
+<p>Ha tenido un gran recorrido por la danza y por el mundo, compartiendo sus conocimientos en diferentes ciudades y escuelas de danza de Eslovaquia, España y Francia.</p>
 <h3>Su formación</h3>
 <ul class="liste-points">
-<li>Más de 20 años de formación en danza: ballet, jazz, danza contemporánea, tango, salsa, zouk y kizomba</li>
-<li>Formación en Argentina con su profesora Myrtha Cardarelli</li>
+<li>Más de 20 años de formación en danza: ballet, jazz, danza contemporánea, tango, folklore argentino, salsa, zouk y kizomba, entre otras</li>
+<li>Formación con artistas y maestros de renombre en Eslovaquia, Argentina (Córdoba, Buenos Aires), España y Francia</li>
 <li>Certificación Shantyoga de 200 horas (2019), formación reconocida por Yoga Alliance</li>
-<li>Formación en curso en yoga Iyengar</li>
+<li>Actualmente, formación en cursos de yoga Iyengar</li>
 </ul>
 <h3>Su camino en el yoga</h3>
 <p>Hoy continúa su camino en el yoga y crea su propio sistema de enseñanza, en el que aplica todo lo que ha aprendido en una vida dedicada al movimiento. Enseña danza a niños, tango y salsa a adultos, y yoga.</p>
