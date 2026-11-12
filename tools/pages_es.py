@@ -51,7 +51,8 @@ f'''<section class="hero-t" aria-labelledby="h1-accueil">
 <div>
 <p class="eyebrow">Un recorrido en movimiento</p>
 <h2 id="parcours-titre">Una vida bailando, transmitiendo</h2>
-<p>Danzarina nace del recorrido de Julieta, artista del movimiento de origen argentino: más de 20 años de formación en ballet, jazz, danza contemporánea, tango, folklore argentino, salsa, zouk y kizomba. Hoy une la danza y el yoga en su propio sistema de enseñanza.</p>
+<p>Danzarina nació de la voluntad de crear un espacio dedicado a la exploración del movimiento y la espiritualidad a través de la danza y el yoga.</p>
+<p>Detrás está Julieta, artista del movimiento de origen argentino, con más de 20 años de formación en ballet, jazz, danza contemporánea, tango, folklore argentino, salsa, zouk y kizomba. Hoy une la danza y el yoga en su propio sistema de enseñanza.</p>
 <p>Hoy, Danzarina continúa su camino en La Reunión.</p>
 <a class="lien-fleche" href="{u('apropos')}">Descubrir nuestra historia</a>
 </div>
