@@ -87,6 +87,6 @@ json.dump(manifest,open(OUT+'manifest.json','w'),indent=1)
 # N2 : Julieta au sol, bras levé, grande étoffe terracotta (fournie 13-11) — nouvelle image d'accueil
 manifest=json.load(open(OUT+'manifest.json'))
 n2=O('n-hero-julieta-sol-voile.png')
-export(n2,'accueil-julieta-sol-voile',[720,1076])
-export(n2.crop((40,0,618,722)),'accueil-julieta-sol-voile-4x5',[480,578])
+export(n2,'accueil-julieta-sol-voile',[720,1076],q=(75,90,90))
+export(n2.crop((40,0,618,722)),'accueil-julieta-sol-voile-4x5',[480,578],q=(75,90,90))
 json.dump(manifest,open(OUT+'manifest.json','w'),indent=1)
