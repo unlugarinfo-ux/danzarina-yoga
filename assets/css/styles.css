@@ -303,7 +303,7 @@ body::before{content:"";position:fixed;z-index:-1;pointer-events:none;top:50%;ri
   .hero-t{min-height:min(90vh,52rem);display:flex;align-items:center}
   .hero-t__media{position:absolute;inset:0}
   .hero-t__media picture,.hero-t__media img{height:100%}
-  .hero-t__media img{object-fit:cover;object-position:0% 45%}
+  .hero-t__media img{object-fit:cover;object-position:0% 85%}
   .hero-t::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(60,26,30,0) 42%,rgba(60,26,30,.35) 62%,rgba(60,26,30,.55) 100%)}
   .hero-t__grille{width:100%;display:flex;justify-content:flex-end}
   .hero-t__texte{width:min(100%,31rem);text-shadow:0 2px 24px rgba(30,6,2,.45)}
