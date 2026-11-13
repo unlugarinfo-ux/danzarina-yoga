@@ -11,7 +11,7 @@ pages.append(page(u('accueil'),
  'Dance & Yoga in Saint-Joseph, Réunion Island | Danzarina',
  'Dance and yoga classes, workshops, private sessions and experiences for hotels in Saint-Joseph and the south of Réunion Island.',
 f'''<section class="hero-t" aria-labelledby="h1-accueil">
-<figure class="hero-t__media">{picture('accueil-julieta-voile-terracotta', 'Julieta balancing on one leg, arm raised, holding a terracotta and olive veil; a large terracotta silk cloth unfolds beside her.', '100vw', eager=True, mobile=('accueil-julieta-voile-terracotta-4x5', '(max-width: 47.99rem)'))}<figcaption>Artistic image</figcaption></figure>
+<figure class="hero-t__media">{picture('accueil-julieta-sol-voile', 'Julieta seated on the floor in a wide split, one arm reaching up, dressed in a terracotta veil; a large terracotta silk cloth unfolds beside her.', '100vw', eager=True, mobile=('accueil-julieta-sol-voile-4x5', '(max-width: 47.99rem)'))}<figcaption>Artistic image</figcaption></figure>
 <div class="wrap hero-t__grille"><div class="hero-t__texte">
 <h1 id="h1-accueil"><span class="hero-t__l1">Dance &amp; Yoga</span> <span class="hero-t__l2">Réunion Island</span></h1>
 <p class="lead">Dance and yoga classes, workshops and private sessions. A harmonious rhythm between dance and yoga, to live fully in your body with grace and fluidity.</p>

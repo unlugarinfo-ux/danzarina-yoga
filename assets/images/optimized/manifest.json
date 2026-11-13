@@ -225,5 +225,25 @@
    614,
    768
   ]
+ },
+ "accueil-julieta-sol-voile": {
+  "widths": [
+   720,
+   1076
+  ],
+  "ratio": [
+   1076,
+   722
+  ]
+ },
+ "accueil-julieta-sol-voile-4x5": {
+  "widths": [
+   480,
+   578
+  ],
+  "ratio": [
+   578,
+   722
+  ]
  }
 }

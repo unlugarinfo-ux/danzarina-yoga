@@ -292,7 +292,7 @@ body::before{content:"";position:fixed;z-index:-1;pointer-events:none;top:50%;ri
 .hero-t{position:relative;overflow:hidden;color:#F7F3EC;background:linear-gradient(180deg,#5C2A2E,#3E1C1F)}
 .hero-t__media{position:relative;margin:0}
 .hero-t__media img{display:block;width:100%;height:auto}
-.hero-t__media figcaption{position:absolute;left:var(--s-4);bottom:var(--s-3);margin:0;font-size:.75rem;color:#5C4A42;z-index:2}
+.hero-t__media figcaption{position:absolute;left:var(--s-4);bottom:var(--s-3);margin:0;font-size:.75rem;color:rgba(247,243,236,.85);text-shadow:0 1px 6px rgba(0,0,0,.4);z-index:2}
 .hero-t__grille{position:relative;z-index:2;padding-block:var(--s-7) var(--s-8)}
 .hero-t .eyebrow{color:#D2AC7E}
 .hero-t h1{margin:0 0 var(--s-6);color:#F7F3EC}

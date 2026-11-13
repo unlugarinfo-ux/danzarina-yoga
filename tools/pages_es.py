@@ -11,7 +11,7 @@ pages.append(page(u('accueil'),
  'Danza y yoga en Saint-Joseph, La Reunión | Danzarina',
  'Clases de danza y de yoga, talleres, sesiones personalizadas y experiencias para hoteles en Saint-Joseph y el sur de La Reunión.',
 f'''<section class="hero-t" aria-labelledby="h1-accueil">
-<figure class="hero-t__media">{picture('accueil-julieta-voile-terracotta', 'Julieta en equilibrio sobre una pierna, con el brazo en alto, sosteniendo un velo terracota y oliva; a su lado se despliega una gran tela de seda terracota.', '100vw', eager=True, mobile=('accueil-julieta-voile-terracotta-4x5', '(max-width: 47.99rem)'))}<figcaption>Imagen artística</figcaption></figure>
+<figure class="hero-t__media">{picture('accueil-julieta-sol-voile', 'Julieta sentada en el suelo con las piernas abiertas y un brazo hacia el cielo, vestida con un velo terracota; a su lado se despliega una gran tela de seda terracota.', '100vw', eager=True, mobile=('accueil-julieta-sol-voile-4x5', '(max-width: 47.99rem)'))}<figcaption>Imagen artística</figcaption></figure>
 <div class="wrap hero-t__grille"><div class="hero-t__texte">
 <h1 id="h1-accueil"><span class="hero-t__l1">Danza y Yoga</span> <span class="hero-t__l2">La Reunión</span></h1>
 <p class="lead">Clases de danza y de yoga, talleres y sesiones personalizadas. Un ritmo armonioso entre danza y yoga, para vivir el cuerpo con elegancia y fluidez.</p>

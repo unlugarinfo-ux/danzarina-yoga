@@ -269,7 +269,7 @@ pages.append(page('/',
  'Danse & Yoga à Saint-Joseph, La Réunion | Danzarina',
  'Cours de danse et de yoga, ateliers, séances personnalisées et expériences pour hôtels à Saint-Joseph et dans le Sud de La Réunion.',
 f'''<section class="hero-t" aria-labelledby="h1-accueil">
-<figure class="hero-t__media">{picture('accueil-julieta-voile-terracotta', 'Julieta en équilibre sur une jambe, bras levé, tenant un voile terracotta et olive ; une grande étoffe de soie terracotta se déploie à ses côtés.', '100vw', eager=True, mobile=('accueil-julieta-voile-terracotta-4x5', '(max-width: 47.99rem)'))}<figcaption>Image artistique</figcaption></figure>
+<figure class="hero-t__media">{picture('accueil-julieta-sol-voile', 'Julieta assise au sol en grand écart, un bras levé vers le ciel, vêtue d’un voile terracotta ; une grande étoffe de soie terracotta se déploie à ses côtés.', '100vw', eager=True, mobile=('accueil-julieta-sol-voile-4x5', '(max-width: 47.99rem)'))}<figcaption>Image artistique</figcaption></figure>
 <div class="wrap hero-t__grille"><div class="hero-t__texte">
 <h1 id="h1-accueil"><span class="hero-t__l1">Danse &amp; Yoga</span> <span class="hero-t__l2">La Réunion</span></h1>
 <p class="lead">Cours de danse et de yoga, ateliers et séances personnalisées. Un rythme harmonieux entre danse et yoga, pour vivre son corps avec élégance et fluidité.</p>
